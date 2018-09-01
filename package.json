@@ -1,7 +1,6 @@
 {
   "name": "wkend_hw",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "scripts": {
     "build": "webpack -w",
@@ -21,5 +20,7 @@
   "devDependencies": {
     "webpack": "^4.17.1",
     "webpack-cli": "^3.1.0"
-  }
+  },
+  "dependencies": {},
+  "description": ""
 }

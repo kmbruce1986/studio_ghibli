@@ -1,0 +1,45 @@
+header {
+  display: block;
+  max-width: 770px;
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+h1 {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 50px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+h2 {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+body {
+  background-color: #C5B358;
+  background-image:url('');
+  background-attachment: fixed;
+  margin: 0;
+}
+
+main {
+  background-color: #ffffff;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 10px;
+  max-width: 750px;
+  margin: auto;
+  margin-top: 20px;
+  clear: left;
+}
+
+li {
+  font-family: 'Roboto', sans-serif;
+  list-style-type: none;
+}

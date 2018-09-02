@@ -37,7 +37,29 @@ FilmView.prototype.populateList = function (list) {
     const filmProducerListItem = document.createElement('li');
     filmProducerListItem.textContent = `Producer: ${this.film.producer}`;
     list.appendChild(filmProducerListItem);
+    const filmReleaseDateListItem = document.createElement('li');
+    filmReleaseDateListItem.textContent = `Release Date: ${this.film.release_date}`;
+    list.appendChild(filmReleaseDateListItem);
+
+    // const filmLocationsList = document.createElement('ul');
+    // this.populateLocationsList(this.film.locations, filmLocationsList);
+    // list.appendChild(filmLocationsList);
+
+    const filmDescriptionListItem = document.createElement('li');
+    filmDescriptionListItem.textContent = `Description: ${this.film.description}`;
+    list.appendChild(filmDescriptionListItem);
   }
 
+//   FilmView.prototype.populateLocationsList = function (locations, list) {
+//   locations.forEach((location) => {
+//     const listItem = document.createElement('li');
+//     listItem.textContent = location.name;
+//     list.appendChild(listItem);
+//   });
+// };
+
+
+  // filmLocationsListItem.textContent = `Locations: ${this.film.locations}`;
+  // list.appendChild(filmLocationsListItem);
 
 module.exports = FilmView;

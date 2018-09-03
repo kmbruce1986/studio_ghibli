@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const filmList = new FilmList(filmListContainer);
   filmList.bindEvents();
 
+
   const ghibli = new Ghibli('https://ghibliapi.herokuapp.com/films');
   ghibli.getFilms();
 });

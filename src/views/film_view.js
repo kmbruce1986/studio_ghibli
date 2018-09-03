@@ -1,4 +1,5 @@
 const PubSub = require('../helpers/pub_sub.js');
+const LocationView = require('./location_view.js');
 
 const FilmView = function (container, film) {
   this.filmsContainer = container;
@@ -42,6 +43,8 @@ FilmView.prototype.populateList = function (list) {
     list.appendChild(filmReleaseDateListItem);
 
     // const filmLocationsList = document.createElement('ul');
+    // const locationView = new LocationView(this.film);
+    // locationView.render();
     // this.populateLocationsList(this.film.locations, filmLocationsList);
     // list.appendChild(filmLocationsList);
 
@@ -50,16 +53,6 @@ FilmView.prototype.populateList = function (list) {
     list.appendChild(filmDescriptionListItem);
   }
 
-//   FilmView.prototype.populateLocationsList = function (locations, list) {
-//   locations.forEach((location) => {
-//     const listItem = document.createElement('li');
-//     listItem.textContent = location.name;
-//     list.appendChild(listItem);
-//   });
-// };
 
-
-  // filmLocationsListItem.textContent = `Locations: ${this.film.locations}`;
-  // list.appendChild(filmLocationsListItem);
 
 module.exports = FilmView;

@@ -1,5 +1,6 @@
 const PubSub = require('../helpers/pub_sub.js');
 const FilmView = require('./film_view.js');
+const LocationView = require('./location_view.js');
 
 const FilmList = function (container) {
   this.container = container;
@@ -19,6 +20,6 @@ FilmList.prototype.render = function() {
     const filmView = new FilmView(this.container, film);
     filmView.render();
   })
-} 
+}
 
 module.exports = FilmList;
